@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#09090b] font-[Inter]">
+
+<div class="flex flex-col lg:flex-row items-start px-6 lg:px-20 mt-10 mb-5">
+
+    <div class="flex-1 bg-[#222224] border border-gray-700 p-10 rounded-2xl mx-6">
+        
+        <div class="px-4 md:px-8 pt-10">
+
+            <div class="flex flex-col md:flex-row justify-between gap-6 mb-5">
+
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-4">
+                       <div class="w-20 h-20 rounded-full p-[2px] bg-gray-500">
+                        <div class="w-full h-full rounded-full overflow-hidden bg-gray-900">
+                <img src="/images/profile3.jpg" class="w-full h-full object-cover">
+                        </div>
+                         </div>
+
+                        <div>
+                            <p class="text-white md:text-2xl text-lg">
+                                Ron Peter M. Mortega
+                            </p>
+
+                            <div class="flex items-center gap-2">
+                                <p class="text-white/50 text-sm uppercase">
+                                    4TH YEAR BSIT | 4-B
+                                </p>
+                                <span class="bg-[#4A90E2]/20 text-[#4A90E2] text-[11px] font-bold px-2 py-0.5 rounded-full">
+                                    OJT
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOCIALS -->
+                    <div class="flex gap-2">
+                        <a href="https://www.facebook.com/ronpeter.mortega.3" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-gray-500 transition">
+                            <img src="/images/fb.png" class="w-5 h-5">
+                        </a>
+
+                        <a href="https://github.com/TambaySaB4" class="w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-gray-500 transition">
+                            <img src="/images/github.png" class="w-5 h-5">
+                        </a>
+
+                        <a href="mailto:your@email.com"
+                           class="h-10 flex items-center justify-center bg-[#4A90E2]/20 text-[#4A90E2] text-xs font-bold px-5 rounded-full hover:bg-gray-500 transition">
+                            Email
+                        </a>
+                        
+                        </div>
+
+                </div>
+
+           
+                <div class="text-left md:text-right">
+                    <p class="text-white/60 text-sm uppercase tracking-wider">
+                        On the Job Training Accomplishment Report
+                    </p>
+                    <p class="text-[#5999d4] text-2xl font-black mt-1">
+                        Bicol University Registrar's Office
+                    </p>
+                      <p class="text-white/60 text-sm uppercase tracking-wider">
+                        Assigned Office
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+  <hr class="border-t border-white/5 my-3">
+    
+        <div class="flex items-center justify-between mx-3">
+
+    <!-- weekly reports kunware -->
+    <p class="text-[#5999d4] text-2xl font-semibold">
+    <!-- text-->
+    </p>
+
+    <!-- RIGHT BUTTONS -->
+    <div class="flex gap-2 mx-3">
+
+        <button onclick="setActiveMonth('FEB')" data-month="FEB" class="month-btn border-0.5 border-gray-700 px-3 py-1 text-xs rounded-md hover:bg-gray-600">
+            FEB
+        </button>
+
+        <button onclick="setActiveMonth('MAR')" data-month="MAR" class="month-btn border-0.5 border-gray-700 px-3 py-1 text-xs  rounded-md hover:bg-gray-600">
+            MAR
+        </button>
+
+        <button  onclick="setActiveMonth('APR')" data-month="APR" class="month-btn border-0.5 border-gray-700 px-3 py-1 text-xs  rounded-md hover:bg-gray-600">
+            APR
+        </button>
+
+        <button onclick="setActiveMonth('MAY')" data-month="MAY" class="month-btn border-0.5 border-gray-700 px-3 py-1 text-xs  rounded-md hover:bg-gray-600">
+            MAY
+        </button>
+
+    </div>
+
+</div>
+        
+       
+
+    <div id="weeks-container" class="flex flex-col gap-6 p-3">
+
+    </div>
+
+
+
+
+    </div>
+
+    <div class="flex flex-col gap-4 w-full lg:w-64 self-start">
+
+    <!-- CARD 2 -->
+   <div class="bg-[#222224] border border-gray-700 rounded-2xl p-5 flex flex-col gap-6">
+
+    <h2 class="text-white text-lg font-semibold">
+        Internship Progress
+    </h2>
+
+    <hr class="border-gray-700">
+
+    <!-- HOURS -->
+    <div>
+        <div class="flex justify-between items-end mb-2">
+            <div>
+                <h3 class="text-white font-semibold text-sm">Hours Rendered</h3>
+                <span class="text-xs text-gray-400">
+                    293 / 486 Hours
+                </span>
+            </div>
+            <span class="text-sm font-semibold text-[#5999d4]">60.3%</span>
+        </div>
+
+        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+            <div class="bg-[#5999d4] h-2 rounded-full" style="width: 60.3%"></div>
+        </div>
+    </div>
+
+    <!-- DAYS -->
+    <div>
+        <div class="flex justify-between items-end mb-2">
+            <div>
+                <h3 class="text-white font-semibold text-sm">Days Rendered</h3>
+                <span class="text-xs text-gray-400">
+                    36 / 61 Days
+                </span>
+            </div>
+            <span class="text-sm font-semibold text-emerald-400">59.0%</span>
+        </div>
+
+        <div class="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+            <div class="bg-emerald-400 h-2 rounded-full" style="width: 59.5%"></div>
+        </div>
+    </div>
+
+    <!-- SCHEDULE -->
+    <div class="p-4 bg-[#1a1a1c] rounded-xl border border-gray-700">
+        <h4 class="text-sm font-semibold text-gray-300 mb-3 border-b border-gray-700 pb-2">
+            Current Schedule
+        </h4>
+
+        <div class="text-xs text-gray-400 space-y-2">
+            <div class="flex justify-between">
+                <span>Mon - Thu</span>
+                <span>8:00 AM - 5:00 PM</span>
+            </div>
+
+            <div class="flex justify-between">
+                <span>Friday</span>
+                <span class="text-[#5999d4] font-semibold">WFH</span>
+            </div>
+            <div class="flex justify-between">
+                <span>Saturday</span>
+                <span class="text-[#5999d4] font-semibold">WFH</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script src="/data/weeks.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>
