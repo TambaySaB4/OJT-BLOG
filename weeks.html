@@ -1,0 +1,160 @@
+<html lang="en">
+    
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#09090b] font-[Inter]">
+
+<div class="flex justify-center px-6 mt-5 mb-5">
+
+  <div class="w-full max-w-5xl min-h-[400px] p-5 md:p-8 bg-[#222224] border border-gray-700 rounded-2xl">
+
+    <!-- HEADER -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-700 pb-4 mb-6 gap-2">
+
+      <!-- Arrow placeholder -->
+      <div class="flex items-center gap-3">
+  <img 
+    src="/images/arrow.svg" 
+    class="w-5 h-5 cursor-pointer hover:opacity-70 transition"
+    onclick="goBack()"
+  >
+
+  <h2 id="week-title" class="text-xl md:text-2xl font-bold text-white">
+  </h2>
+</div>
+
+      <span id="week-date" class="text-sm md:text-lg font-medium text-gray-500">
+    
+      </span>
+
+    </div>
+
+    <!-- CONTENT AREA -->
+    <div class="flex flex-col">
+     
+                        <h4 class="text-lg md:text-xl font-semibold text-white mb-4">Documentation</h4>
+                                    
+    <div id="image-grid" class="w-full max-w-6xl">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Main large image -->
+            <div class="relative overflow-hidden rounded-2xl aspect-[13/10] cursor-zoom-in">
+                <img
+                    src="/images/kaon.jpg" onclick="openLightbox(this.src)"
+                    class="h-full w-full object-cover hover:scale-105 transition duration-500"
+                >
+            </div>
+
+            <!-- Right side grid -->
+            <div id="image-grid" class="grid grid-cols-2 gap-4">
+                <div class="overflow-hidden rounded-2xl aspect-[4/3] cursor-zoom-in">
+                    <img
+                        src="/images/profile2.jpg" onclick="openLightbox(this.src)"
+                        class="h-full w-full object-cover hover:scale-105 transition duration-500"
+                    >
+                </div>
+
+                <div id="image-grid" class="overflow-hidden rounded-2xl bg-gray-800 aspect-[4/3] cursor-zoom-in">
+                    <img
+                        src="/images/profile1.jpg" onclick="openLightbox(this.src)"
+                        class="h-full w-full object-cover hover:scale-105 transition duration-500"
+                    >
+                </div>
+
+                <div id="image-grid" class="overflow-hidden rounded-2xl bg-gray-800 aspect-[4/3] cursor-zoom-in">
+                    <img
+                        src="/images/profile.jpg" onclick="openLightbox(this.src)"
+                        class="h-full w-full object-cover hover:scale-105 transition duration-500"
+                    >
+                </div>
+                   <div id="image-grid" class="overflow-hidden rounded-2xl bg-gray-800 aspect-[4/3] cursor-zoom-in">
+                    <img
+                        src="/images/profile.jpg" onclick="openLightbox(this.src)"
+                        class="h-full w-full object-cover hover:scale-105 transition duration-500"
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
+
+  <!-- DESCRIPTION (takes 2 columns) -->
+  <div class="lg:col-span-2 bg-[#222224] border border-gray-700 rounded-2xl p-6 shadow-sm">
+
+    <h2 class="text-xl font-bold text-white">Accomplishment</h2>
+
+    <p id="week-desc" class="mt-3 text-gray-400 leading-relaxed">
+    </p>
+
+  </div>
+
+  <!-- SCHEDULE (side card) -->
+ <div class="bg-[#1a1a1c] rounded-2xl border border-gray-700 p-4">
+
+  <h4 class="text-sm font-semibold text-gray-300 mb-3 border-b border-gray-700 pb-2">
+    DTR
+  </h4>
+
+  <!-- MON - THU -->
+  <div id="dtr-container"></div>
+
+</div>
+
+</div>
+
+            
+    </div>
+
+  </div>
+
+</div>
+
+
+<script src="/data/weeks.js"></script>
+<script src="/js/app.js"></script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const weekId = params.get("id");
+
+let selectedWeek = null;
+
+for (let month in DATA) {
+    const found = DATA[month].find(w => w.id === weekId);
+    if (found) {
+        selectedWeek = found;
+        break;
+    }
+}
+
+if (selectedWeek) {
+    document.querySelector("#week-title").textContent = selectedWeek.title;
+    document.querySelector("#week-date").textContent = selectedWeek.date;
+    document.querySelector("#week-desc").textContent = selectedWeek.desc;
+
+    renderImages(selectedWeek.images);
+    renderDTR(selectedWeek.dtr);
+}
+</script>
+<script>
+function goBack() {
+    if (document.referrer) {
+        history.back();
+    } else {
+        window.location.href = "/"; // fallback if no history
+    }
+}
+</script>
+
+</body>
+
+</html>
