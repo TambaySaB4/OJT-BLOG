@@ -4,25 +4,24 @@ const DATA = {
       id: "week1",
       title: "Week 1",
       date: "Feb 23 - Feb 27, 2026",
-      desc: "On this day, I collected and reviewed detailed enrollment and graduation data for the Open University. This involved gathering annual figures categorized by program to ensure a comprehensive dataset for analysis. Additionally, historical information from the establishment of the Open University in 1997 up to the present was researched and organized. The data collected will serve as a foundation for identifying trends, preparing summaries, and supporting the creation of visualizations and reports.",
-      img: "/images/kaon.jpg",
-      wfh: "hahaha",
+      desc: "I collected, organized, and reviewed enrollment and graduation data for the Open University, including historical records from 1997 to the present, categorized by program to support analysis and reporting. The data was examined to identify key trends and milestones, ensuring accuracy and relevance for the summary report. I was also also tasked in developing data visualizations by drafting charts on enrollment by sex and academic level (pre-baccalaureate, post-baccalaureate, basic education, and graduate programs) across 2023–2025 semesters, and initiated the preparation of a Pareto chart to highlight significant factors within the dataset.",
+      img: "/images/week-1/week.13.jpg",
+      wfh: "Under a WFH setup on February 25, the provided enrollment and graduation data were analyzed to identify key trends and historical milestones, ensuring accuracy and relevance for the summary report. Initial work on data visualization was also started by drafting and updating charts showing enrollment data by sex and academic level (pre-baccalaureate, post-baccalaureate, basic education, and graduate levels). A Pareto chart was also initiated to highlight the most significant factors within the dataset and support clearer data interpretation and presentation.",
 
       dtr: {
-        mon: { am: "8:20-12:00", pm: "1:30-5:00" },
-        tue: { am: "8:30-12:00", pm: "1:20-5:00" },
-        wed: { am: "8:40-12:00", pm: "1:20-5:00" },
-        thu: { am: "8:50-12:00", pm: "1:20-5:00" },
-        fri: "WFH",
-        sat: "WFH"
-      },
+        mon: { type: "office", am: "8:03-11:50", pm: "12:35-05:15" },
+       tue: { type: "office", am: "7:47-12:02", pm: "12:40-5:21" },
+       wed: { type: "wfh" },
+      thu: { type: "office", am: "7:47-12:03", pm: "12:44-5:22" },
+      fri: { type: "office", am: "7:47-12:07", pm: "12:41-5:10" },
+          },
 
       images: [
-        "/images/kaon.jpg",
-        "/images/profile1.jpg",
-        "/images/profile2.jpg",
-        "/images/profile.jpg",
-        "/images/profile.jpg"
+        "/images/week-1/week1.jpg",
+        "/images/week-1/week1.4.jpg",
+        "/images/week-1/week.13.jpg",
+        "/images/week-1/week1.2.jpg",
+        "/images/week-1/week1.1.jpg",
       ]
     },
   ],
@@ -180,7 +179,7 @@ const DATA = {
       title: "Week 8",
       date: "Apr 13 - Apr 18, 2026",
       desc: "During the week, I updated and pushed the latest design of the directory page to GitHub. I also assisted a staff member in completing tasks in the Bicol University Student Archiving System (BUSAS), specifically helping finalize assigned Transcript of Records (TOR) entries. Additionally, I handled document filing, delivered and facilitated the receiving of documents between offices such as the OVPA and Supply Office, and scanned various documents, including TORs and other related files.",
-      img: "/images/kaon.jpg",
+      img: "/images/week-8/week8.jpg",
       wfh: "nag busas",
 
       dtr: {
@@ -204,10 +203,17 @@ const DATA = {
 
   MAY: [
     {
-      title: "Week 1",
-      date: "May 1 - May 5, 2026",
-      desc: "Final OJT tasks and completion of required reports.",
-      img: "/images/kaon.jpg"
+      id: "week11",
+      title: "Week 11",
+      img: "/images/nothing.png",
+
+      images: [
+        "/images/nothing.png",
+        "/images/week-11/",
+        "/images/week-11/",
+        "/images/week-11/",
+        "/images/week-11/",
+      ]
     }
   ]
 };

@@ -1,6 +1,7 @@
-function createCard(item) {
+function createCard(item, index = 0) {
     return `
-    <div class="max-w-full rounded-2xl border border-white/10 p-6 shadow-sm">
+    <div class="fade-in max-w-full rounded-2xl border border-white/10 p-6 shadow-sm">
+
       <div class="flex flex-col gap-6 sm:flex-row">
 
         <div class="flex-shrink-0">
@@ -10,24 +11,20 @@ function createCard(item) {
         </div>
 
         <div class="flex flex-col justify-center">
-          
           <div class="flex flex-row gap-3">
             <h2 class="text-xl font-bold text-white">${item.title}</h2>
             <p class="text-xs text-gray-500 mt-1.5">${item.date}</p>
           </div>
 
-          <p class="mt-3 text-gray-400">
-            ${item.desc}
-          </p>
-
-         <div class="mt-4">
+          <p class="mt-3 text-gray-400 line-clamp-4">${item.desc}</p>
+             <div class="mt-4">
             <a href="weeks.html?id=${item.id}" 
                class="inline-block bg-gray-900 text-gray-400 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-gray-700">
               View
             </a>
           </div>
-
         </div>
+
       </div>
     </div>
     `;
@@ -40,9 +37,11 @@ function renderMonth(month) {
 
     container.innerHTML = "";
 
-    DATA[month].forEach(item => {
-        container.innerHTML += createCard(item);
+    DATA[month].forEach((item, index) => {
+        container.insertAdjacentHTML("beforeend", createCard(item, index));
     });
+
+    observeCards(); 
 }
 
 function setActiveMonth(month) {
@@ -119,6 +118,8 @@ function renderImages(images) {
 function renderDTR(dtr) {
     const container = document.getElementById("dtr-container");
 
+    const days = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
     container.innerHTML = `
         <div class="grid grid-cols-3 text-xs text-gray-500 mb-2">
             <span>Day</span>
@@ -126,24 +127,57 @@ function renderDTR(dtr) {
             <span class="text-right">PM</span>
         </div>
 
-        ${["mon","tue","wed","thu"].map(day => `
-            <div class="grid grid-cols-3 text-xs text-gray-400">
-                <span>${day.toUpperCase()}</span>
-                <span class="text-center">${dtr[day].am}</span>
-                <span class="text-right">${dtr[day].pm}</span>
-            </div>
-        `).join("")}
+        ${days.map(day => {
+            const data = dtr?.[day];
 
-        <div class="grid grid-cols-3 mt-3 pt-2 border-t border-gray-700">
-            <span class="text-xs text-[#5999d4]">FRI</span>
-            <span class="text-xs text-center text-[#5999d4]">${dtr.fri}</span>
-            <span class="text-xs text-right text-[#5999d4]">${dtr.fri}</span>
-        </div>
+            if (!data) {
+                return `
+                    <div class="grid grid-cols-3 text-xs text-gray-500">
+                        <span>${day.toUpperCase()}</span>
+                        <span class="text-center">-</span>
+                        <span class="text-right">-</span>
+                    </div>
+                `;
+            }
 
-        <div class="grid grid-cols-3">
-            <span class="text-xs text-[#5999d4]">SAT</span>
-            <span class="text-xs text-center text-[#5999d4]">${dtr.sat}</span>
-            <span class="text-xs text-right text-[#5999d4]">${dtr.sat}</span>
-        </div>
+            if (data.type === "wfh") {
+                return `
+                    <div class="grid grid-cols-3 text-xs text-[#5999d4]">
+                        <span>${day.toUpperCase()}</span>
+                        <span class="text-center">WFH</span>
+                        <span class="text-right">WFH</span>
+                    </div>
+                `;
+            }
+
+            if (data.type === "office") {
+                return `
+                    <div class="grid grid-cols-3 text-xs text-gray-400">
+                        <span>${day.toUpperCase()}</span>
+                        <span class="text-center">${data.am ?? "-"}</span>
+                        <span class="text-right">${data.pm ?? "-"}</span>
+                    </div>
+                `;
+            }
+
+            return "";
+        }).join("")}
     `;
+}
+
+function observeCards() {
+    const cards = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target); // animate once
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    cards.forEach(card => observer.observe(card));
 }
