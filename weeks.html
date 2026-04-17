@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-[#09090b] font-[Inter]">
+<body class="bg-[#15191d] font-[Inter]">
 
 <div class="flex justify-center px-6 mt-5 mb-5">
 
-  <div class="w-full max-w-5xl min-h-[400px] p-5 md:p-8 bg-[#222224] border border-gray-700 rounded-2xl">
+  <div class="w-full max-w-5xl min-h-[400px] p-5 md:p-8 bg-[#181d21] border border-gray-700 rounded-2xl">
 
     <!-- HEADER -->
     <div class="flex flex-col md:flex-row md:items-center md:justify-between border-b border-gray-700 pb-4 mb-6 gap-2">
@@ -85,7 +85,7 @@
     </div>
 
 
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-6 ">
 
   <!-- DESCRIPTION (takes 2 columns) -->
   <div class="lg:col-span-2 bg-[#222224] border border-gray-700 rounded-2xl p-6 shadow-sm">
@@ -95,10 +95,14 @@
     <p id="week-desc" class="mt-3 text-gray-400 leading-relaxed">
     </p>
 
+     <h2 class="text-xl font-bold text-white mt-2">WFH</h2>
+     <p id="wfh" class="mt-3 text-gray-400 leading-relaxed">
+    </p>
+
   </div>
 
-  <!-- SCHEDULE (side card) -->
- <div class="bg-[#1a1a1c] rounded-2xl border border-gray-700 p-4">
+  <!-- DTR-->
+ <div class="bg-[#1a1a1c] rounded-2xl border border-gray-700 p-4 self-start">
 
   <h4 class="text-sm font-semibold text-gray-300 mb-3 border-b border-gray-700 pb-2">
     DTR
@@ -140,6 +144,7 @@ if (selectedWeek) {
     document.querySelector("#week-title").textContent = selectedWeek.title;
     document.querySelector("#week-date").textContent = selectedWeek.date;
     document.querySelector("#week-desc").textContent = selectedWeek.desc;
+     document.querySelector("#wfh").textContent = selectedWeek.wfh;
 
     renderImages(selectedWeek.images);
     renderDTR(selectedWeek.dtr);
