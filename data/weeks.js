@@ -79,48 +79,50 @@ const DATA = {
       id: "week4",
       title: "Week 4",
       date: "Mar 16 - Mar 21, 2026",
-      desc: "On this day, I collected and reviewed detailed enrollment and graduation data for the Open University. This involved gathering annual figures categorized by program to ensure a comprehensive dataset for analysis. Additionally, historical information from the establishment of the Open University in 1997 up to the present was researched and organized. The data collected will serve as a foundation for identifying trends, preparing summaries, and supporting the creation of visualizations and reports.",
-      img: "/images/kaon.jpg",
+      desc: "Initiated the technical setup for the University Registrar’s Office (URO) system by configuring the local development environment on my workstation using VS Code. This included installing and setting up XAMPP for local server management, initializing GitHub for version control, and resolving PHP configuration issues on my desktop to ensure a functional development setup. In addition, I facilitated the delivery and submission of official university documents to various offices, including the Accounting Office, Budget Office, College of Nursing, and OVPA, for review and processing. I also worked on refining the UI/UX design of the FAQs page, focusing on improving its layout and overall user experience.",
+      img: "/images/week-4/week4.3.jpg",
+      wfh: "Under a work-from-home (WFH) setup, I assisted in tasks within the BUSAS system by supporting a staff member assigned to specific student records. My role involved inputting detailed academic curricula for these records, enabling the staff member to accurately generate the corresponding Transcript of Records (TOR) for each studen",
 
       dtr: {
-        mon: { am: "8:20-12:00", pm: "1:30-5:00" },
-        tue: { am: "8:30-12:00", pm: "1:20-5:00" },
-        wed: { am: "8:40-12:00", pm: "1:20-5:00" },
-        thu: { am: "8:50-12:00", pm: "1:20-5:00" },
-        fri: "WFH",
-        sat: "WFH"
-      },
+       mon: { type: "office", am: "7:58-12:33", pm: "12:58-05:13" },
+       tue: { type: "office", am: "7:52-12:05", pm: "12:13-5:05" },
+       wed: { type: "office", am: "8:00-12:30", pm: "12:46-5:09" },
+       thu: { type: "wfh"},
+       fri: { type: "wfh"},
+       sat: { type: "wfh"},
+          },
 
       images: [
-        "/images/kaon.jpg",
-        "/images/profile1.jpg",
-        "/images/profile2.jpg",
-        "/images/profile.jpg",
-        "/images/profile.jpg"
+        "/images/week-4/week4.3.jpg",
+        "/images/week-4/week4.jpg",
+        "/images/week-4/week4.2.jpg",
+        "/images/week-4/week4.4.jpg",
+        "/images/week-4/week4.1.jpg",
       ]
     },
     {
       id: "week5",
       title: "Week 5",
       date: "Mar 23 - Mar 28, 2026",
-      desc: "On this day, I collected and reviewed detailed enrollment and graduation data for the Open University. This involved gathering annual figures categorized by program to ensure a comprehensive dataset for analysis. Additionally, historical information from the establishment of the Open University in 1997 up to the present was researched and organized. The data collected will serve as a foundation for identifying trends, preparing summaries, and supporting the creation of visualizations and reports.",
-      img: "/images/kaon.jpg",
+      desc: "During the week, I assisted in drafting the strategic seating plan for the upcoming Bicol University Commencement Exercises, ensuring an organized arrangement for graduating students, faculty, and guests. I also handled the delivery of official documents to the College of Nursing (BUCN) and the DPPO for processing. In addition, I worked on the UI/UX design of the directory pages using Figma and implemented the corresponding front-end code for the design.",
+      img: "/images/week-5/week5.3.jpg",
+      wfh: "Under a work-from-home (WFH) setup, I worked on the BUSAS system, where I was assigned ten student records to process by inputting their Transcript of Records (TOR) details and identifying any errors in their academic records to ensure accuracy.",
 
       dtr: {
-        mon: { am: "8:20-12:00", pm: "1:30-5:00" },
-        tue: { am: "8:30-12:00", pm: "1:20-5:00" },
-        wed: { am: "8:40-12:00", pm: "1:20-5:00" },
-        thu: { am: "8:50-12:00", pm: "1:20-5:00" },
-        fri: "WFH",
-        sat: "WFH"
-      },
+       mon: { type: "office", am: "7:47-12:34", pm: "12:43-5:03" },
+       tue: { type: "office", am: "7:59-12:34", pm: "12:43-5:07" },
+       wed: { type: "office", am: "8:16-12:22", pm: "12:32-5:08" },
+       thu: { type: "wfh"},
+       fri: { type: "wfh"},
+       sat: { type: "wfh"},
+          },
 
       images: [
-        "/images/kaon.jpg",
-        "/images/profile1.jpg",
-        "/images/profile2.jpg",
-        "/images/profile.jpg",
-        "/images/profile.jpg"
+        "/images/week-5/week5.3.jpg",
+        "/images/week-5/week5.jpg",
+        "/images/week-5/week5.2.jpg",
+        "/images/week-5/week5.4.jpg",
+        "/images/week-5/week5.1.jpg",
       ]
     },
     {

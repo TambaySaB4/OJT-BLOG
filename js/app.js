@@ -45,28 +45,29 @@ function renderMonth(month) {
 }
 
 function setActiveMonth(month) {
-    // render content
+    localStorage.setItem("activeMonth", month); // 👈 save
+
     renderMonth(month);
 
-    // reset all buttons
     const buttons = document.querySelectorAll(".month-btn");
 
     buttons.forEach(btn => {
         const isActive = btn.getAttribute("data-month") === month;
 
         if (isActive) {
-            btn.classList.remove("bg-gray-900", "text-gray-600");
+            btn.classList.remove("text-gray-600");
             btn.classList.add("bg-gray-900", "text-[#4A90E2]");
         } else {
-            btn.classList.remove("bg-[#4A90E2]", "text-white");
-            btn.classList.add("bg-gray-900", "text-gray-600");
+            btn.classList.remove("bg-gray-900", "text-[#4A90E2]");
+            btn.classList.add("text-gray-600");
         }
     });
 }
 
-// default load
+// default 
 window.onload = function () {
-    setActiveMonth("FEB");
+    const savedMonth = localStorage.getItem("activeMonth") || "FEB";
+    setActiveMonth(savedMonth);
 };
 
 function openLightbox(src) {
