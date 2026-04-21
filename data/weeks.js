@@ -182,8 +182,8 @@ const DATA = {
       title: "Week 8",
       date: "Apr 13 - Apr 18, 2026",
       desc: "During the week, I updated and pushed the latest design of the directory page to GitHub. I also assisted a staff member in completing tasks in the Bicol University Student Archiving System (BUSAS), specifically helping finalize assigned Transcript of Records (TOR) entries. Additionally, I handled document filing, delivered and facilitated the receiving of documents between offices such as the OVPA and Supply Office, and scanned various documents, including TORs and other related files.",
-      img: "/images/week-8/week8.jpg",
-      wfh: "nag busas",
+      img: "/images/week-8/week8.2.jpg",
+      wfh: "During the WFH, I worked on the BUSAS system by inputting Transcript of Records (TOR) details for assigned student records, ensuring accuracy and completeness of the data.",
 
       dtr: {
         mon: { am: "8:00-12:00", pm: "1:00-5:00" },
@@ -195,11 +195,11 @@ const DATA = {
       },
 
       images: [
-        "/images/week-8/week8.jpg",
-        "/images/week-8/week8.1.jpg",
         "/images/week-8/week8.2.jpg",
+        "/images/week-8/week8.1.jpg",
+        "/images/week-8/week8.jpg",
         "/images/week-8/week8.3.jpg",
-         "/images/week-8/wee8.4.jpg",
+         "/images/week-8/week8.4.jpg",
       ]
     },
   ],
