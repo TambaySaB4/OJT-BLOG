@@ -129,52 +129,53 @@ const DATA = {
       id: "week6",
       title: "Week 6",
       date: "Mar 30 - Apr 1, 2026",
-      desc: "On this day, I collected and reviewed detailed enrollment and graduation data for the Open University. This involved gathering annual figures categorized by program to ensure a comprehensive dataset for analysis. Additionally, historical information from the establishment of the Open University in 1997 up to the present was researched and organized. The data collected will serve as a foundation for identifying trends, preparing summaries, and supporting the creation of visualizations and reports.",
-      img: "/images/kaon.jpg",
+      desc: "Facilitated the retrieval and transmittal of official student records from various university departments, including coordination with the Bicol University Graduate School (BUGS) Registrar’s Office. This involved securing physical file copies for designated student batches and managing pullout folders for additional records. All documents were properly logged, forwarded to the appropriate registrar, and officially received with the necessary signatures to maintain a secure and verifiable chain of custody. In addition, I updated, refined, and polished the UI design of the directory page and pushed the latest changes to GitHub.",
+      img: "/images/week-6/week6.jpg",
+      wfh: "NONE",
 
-      dtr: {
-        mon: { am: "8:20-12:00", pm: "1:30-5:00" },
-        tue: { am: "8:30-12:00", pm: "1:20-5:00" },
-        wed: { am: "8:40-12:00", pm: "1:20-5:00" },
-        thu: { am: "8:50-12:00", pm: "1:20-5:00" },
-        fri: "WFH",
-        sat: "WFH"
-      },
+       dtr: {
+       mon: { type: "office", am: "7:37-12:24", pm: "12:27-5:06" },
+       tue: { type: "office", am: "7:48-12:34", pm: "12:39-5:06" },
+       wed: { type: ""},
+       thu: { type: ""},
+       fri: { type: ""},
+       sat: { type: ""},
+          },
 
       images: [
-        "/images/kaon.jpg",
-        "/images/profile1.jpg",
-        "/images/profile2.jpg",
-        "/images/profile.jpg",
-        "/images/profile.jpg"
+        "/images/week-6/week6.jpg",
+        "/images/week-6/week6.1.jpg",
+        "/images/week-6/week6.2.jpg",
+        "/images/week-6/week6.3.jpg",
+        "/images/week-6/week6.4.jpg",
       ]
     },
   ],
 
   APR: [
-   {
+    {
       id: "week7",
       title: "Week 7",
       date: "Apr 6 - Apr 10, 2026",
-      desc: "On this day, I collected and reviewed detailed enrollment and graduation data for the Open University. This involved gathering annual figures categorized by program to ensure a comprehensive dataset for analysis. Additionally, historical information from the establishment of the Open University in 1997 up to the present was researched and organized. The data collected will serve as a foundation for identifying trends, preparing summaries, and supporting the creation of visualizations and reports.",
-      img: "/images/kaon.jpg",
-      wfh: "hahaha",
+      desc: "During the week, I developed and pushed the latest UI updates for the directory page, including adding a separate directory view intended for registrar offices. I also scanned student documents, particularly Transcript of Records (TOR), to support digital storage and enable faster and more convenient retrieval and printing when requested. In addition, I facilitated the delivery of official documents to the Accounting Office and the Law Office for processing.",
+      img: "/images/week-7/week7.jpg",
+      wfh: "During the WFH setup, I worked on the BUSAS system by inputting Transcript of Records details for assigned student records.",
 
-      dtr: {
-        mon: { am: "8:20-12:00", pm: "1:30-5:00" },
-        tue: { am: "8:30-12:00", pm: "1:20-5:00" },
-        wed: { am: "8:40-12:00", pm: "1:20-5:00" },
-        thu: { am: "8:50-12:00", pm: "1:20-5:00" },
-        fri: "WFH",
-        sat: "WFH"
-      },
+       dtr: {
+       mon: { type: "" },
+       tue: { type: "" },
+       wed: { type: ""},
+       thu: { type: ""},
+       fri: { type: ""},
+       sat: { type: ""},
+          },
 
       images: [
-        "/images/kaon.jpg",
-        "/images/profile1.jpg",
-        "/images/profile2.jpg",
-        "/images/profile.jpg",
-        "/images/profile.jpg"
+        "/images/week-7/week7.jpg",
+        "/images/week-7/week7.1.jpg",
+        "/images/week-7/week7.2.jpg",
+        "/images/week-7/week7.3.jpg",
+        "/images/week-7/week7.4.jpg",
       ]
     },
        {
