@@ -203,12 +203,87 @@ const DATA = {
          "/images/week-8/week8.4.jpg",
       ]
     },
+      {
+      id: "week9",
+      title: "Week 9",
+      date: "Apr 20 - Apr 25, 2026",
+      desc: "During the week, I updated and pushed the latest design of the directory page to GitHub. I also assisted a staff member in completing tasks in the Bicol University Student Archiving System (BUSAS), specifically helping finalize assigned Transcript of Records (TOR) entries. Additionally, I handled document filing, delivered and facilitated the receiving of documents between offices such as the OVPA and Supply Office, and scanned various documents, including TORs and other related files.",
+      img: "/images/week-8/week8.2.jpg",
+      wfh: "During the WFH, I worked on the BUSAS system by inputting Transcript of Records (TOR) details for assigned student records, ensuring accuracy and completeness of the data.",
+
+      dtr: {
+        mon: { am: "8:00-12:00", pm: "1:00-5:00" },
+        tue: { am: "8:00-12:00", pm: "1:00-5:00" },
+        wed: { am: "8:00-12:00", pm: "1:00-5:00" },
+        thu: { am: "8:00-12:00", pm: "1:00-5:00" },
+        fri: "WFH",
+        sat: "WFH"
+      },
+
+      images: [
+        "/images/week-8/week8.2.jpg",
+        "/images/week-8/week8.1.jpg",
+        "/images/week-8/week8.jpg",
+        "/images/week-8/week8.3.jpg",
+         "/images/week-8/week8.4.jpg",
+      ]
+    },
+      {
+      id: "week10",
+      title: "Week 10",
+      date: "Apr 27 - May 2, 2026",
+      desc: "During the week, I updated and pushed the latest design of the directory page to GitHub. I also assisted a staff member in completing tasks in the Bicol University Student Archiving System (BUSAS), specifically helping finalize assigned Transcript of Records (TOR) entries. Additionally, I handled document filing, delivered and facilitated the receiving of documents between offices such as the OVPA and Supply Office, and scanned various documents, including TORs and other related files.",
+      img: "/images/week-8/week8.2.jpg",
+      wfh: "During the WFH, I worked on the BUSAS system by inputting Transcript of Records (TOR) details for assigned student records, ensuring accuracy and completeness of the data.",
+
+      dtr: {
+        mon: { am: "8:00-12:00", pm: "1:00-5:00" },
+        tue: { am: "8:00-12:00", pm: "1:00-5:00" },
+        wed: { am: "8:00-12:00", pm: "1:00-5:00" },
+        thu: { am: "8:00-12:00", pm: "1:00-5:00" },
+        fri: "WFH",
+        sat: "WFH"
+      },
+
+      images: [
+        "/images/week-8/week8.2.jpg",
+        "/images/week-8/week8.1.jpg",
+        "/images/week-8/week8.jpg",
+        "/images/week-8/week8.3.jpg",
+         "/images/week-8/week8.4.jpg",
+      ]
+    },
   ],
 
   MAY: [
-    {
+       {
       id: "week11",
       title: "Week 11",
+      date: "Apr 4 - May 9, 2026",
+      desc: "During the week, we organized Transcript of Records (TOR) files into three categories: TOR, Drafts, and Permanent Records, and arranged them alphabetically for proper storage and easier retrieval. We also scanned TOR files to support faster access to records when requested and transferred TOR data into the office computer system for digital documentation. In preparation for the upcoming commencement exercises, we were tasked to conduct a site survey and take photographs of the grandstand and the fences near Gate 1 for the layout and placement of event tarpaulins.",
+      img: "/images/week-11/week11.png",
+      wfh: "Under a work-from-home (WFH) setup, I assisted a staff member in completing the remaining BUSAS tasks assigned on April 24, particularly in processing and finalizing pending student record entries within the system.",
+
+      dtr: {
+       mon: { type: "office", am: "8:10-12:30", pm: "12:40-5:11" },
+       tue: { type: "office", am: "8:11-12:34", pm: "12:47-5:13" },
+       wed: { type: "office", am: "7:52-12:39", pm: "12:46-5:06" },
+       thu: { type: "office", am: "8:13-12:31", pm: "12:39-5:12" },
+       fri: { type: "wfh"},
+       sat: { type: "wfh"},
+          },
+
+      images: [
+        "/images/week-11/week11.png",
+        "/images/week-11/week11.1.png",
+        "/images/week-11/week11.2.jpg",
+        "/images/week-11/week11.3.jpg",
+         "/images/week-11/week11.4.jpg",
+      ]
+    },
+    {
+      id: "week12",
+      title: "Week 12",
       img: "/images/nothing.png",
 
       images: [
