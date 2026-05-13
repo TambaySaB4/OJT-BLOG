@@ -207,50 +207,50 @@ const DATA = {
       id: "week9",
       title: "Week 9",
       date: "Apr 20 - Apr 25, 2026",
-      desc: "During the week, I updated and pushed the latest design of the directory page to GitHub. I also assisted a staff member in completing tasks in the Bicol University Student Archiving System (BUSAS), specifically helping finalize assigned Transcript of Records (TOR) entries. Additionally, I handled document filing, delivered and facilitated the receiving of documents between offices such as the OVPA and Supply Office, and scanned various documents, including TORs and other related files.",
-      img: "/images/week-8/week8.2.jpg",
-      wfh: "During the WFH, I worked on the BUSAS system by inputting Transcript of Records (TOR) details for assigned student records, ensuring accuracy and completeness of the data.",
+      desc: "During the week, we continued scanning Transcript of Records (TOR) files and organizing student records for proper storage and easier retrieval. The records were sorted alphabetically, grouped by letter into designated sets, and further categorized into three classifications: TOR, Drafts, and Permanent Records. We also scanned the documents to create digital copies that support faster and more convenient access to student records when requested.",
+      img: "/images/week-9/week9.2.jpg",
+      wfh: "Under a work-from-home (WFH) setup from April 21 to 25, we worked on assigned BUSAS tasks each day. The arrangement was implemented due to the transport strike on April 21 and 22, while April 24 and 25 were officially designated as WFH days. Our tasks mainly involved processing and updating student records within the BUSAS system, including inputting and verifying Transcript of Records (TOR) data.",
 
-      dtr: {
-        mon: { am: "8:00-12:00", pm: "1:00-5:00" },
-        tue: { am: "8:00-12:00", pm: "1:00-5:00" },
-        wed: { am: "8:00-12:00", pm: "1:00-5:00" },
-        thu: { am: "8:00-12:00", pm: "1:00-5:00" },
-        fri: "WFH",
-        sat: "WFH"
-      },
+        dtr: {
+       mon: { type: "office", am: "8:02-12:18", pm: "12:25-5:07" },
+       tue: { type: "wfh"},
+       wed: { type: "wfh"},
+       thu: { type: "office", am: "7:53-12:31", pm: "12:35-5:05" },
+       fri: { type: ""},
+       sat: { type: "wfh"},
+          },
 
       images: [
-        "/images/week-8/week8.2.jpg",
-        "/images/week-8/week8.1.jpg",
-        "/images/week-8/week8.jpg",
-        "/images/week-8/week8.3.jpg",
-         "/images/week-8/week8.4.jpg",
+        "/images/week-9/week9.2.jpg",
+        "/images/week-9/week9.1.jpg",
+        "/images/week-9/week9.jpg",
+        "/images/week-9/week9.3.jpg",
+         "/images/week-9/week9.4.jpg",
       ]
     },
       {
       id: "week10",
       title: "Week 10",
       date: "Apr 27 - May 2, 2026",
-      desc: "During the week, I updated and pushed the latest design of the directory page to GitHub. I also assisted a staff member in completing tasks in the Bicol University Student Archiving System (BUSAS), specifically helping finalize assigned Transcript of Records (TOR) entries. Additionally, I handled document filing, delivered and facilitated the receiving of documents between offices such as the OVPA and Supply Office, and scanned various documents, including TORs and other related files.",
-      img: "/images/week-8/week8.2.jpg",
-      wfh: "During the WFH, I worked on the BUSAS system by inputting Transcript of Records (TOR) details for assigned student records, ensuring accuracy and completeness of the data.",
+      desc: "During the week, we scanned Transcript of Records (TOR) files to support digital archiving and easier record retrieval. On Monday, the University Registrar’s Office (URO) was assigned to lead the university flag-raising ceremony. We also organized student files into three categories: TOR, Drafts, and Permanent Records, ensuring proper arrangement and storage. In addition, we facilitated the delivery of official documents to various offices within Bicol University for processing and coordination purposes.",
+      img: "/images/week-10/week10.4.jpg",
+      wfh: "Under a work-from-home (WFH) setup, we conducted an online meeting regarding the development of the graduation seat plan system for the 2026 Commencement Exercises. The discussion focused on the proposed website that would automate the assignment of seats for graduating students, aiming to improve the organization and efficiency of the seating arrangement process during the ceremony.",
 
-      dtr: {
-        mon: { am: "8:00-12:00", pm: "1:00-5:00" },
-        tue: { am: "8:00-12:00", pm: "1:00-5:00" },
-        wed: { am: "8:00-12:00", pm: "1:00-5:00" },
-        thu: { am: "8:00-12:00", pm: "1:00-5:00" },
-        fri: "WFH",
-        sat: "WFH"
-      },
+       dtr: {
+       mon: { type: "office", am: "7:31-12:25", pm: "12:30-5:09" },
+       tue: { type: "office", am: "7:45-12:17", pm: "12:26-5:03" },
+       wed: { type: "office", am: "8:08-12:19", pm: "12:24-5:18" },
+       thu: { type: "office", am: "7:53-12:29", pm: "12:37-5:05" },
+       fri: { type: ""},
+       sat: { type: "wfh"},
+          },
 
       images: [
-        "/images/week-8/week8.2.jpg",
-        "/images/week-8/week8.1.jpg",
-        "/images/week-8/week8.jpg",
-        "/images/week-8/week8.3.jpg",
-         "/images/week-8/week8.4.jpg",
+        "/images/week-10/week10.4.jpg",
+        "/images/week-10/week10.1.jpg",
+        "/images/week-10/week10.jpg",
+        "/images/week-10/week10.3.jpg",
+         "/images/week-10/week10.2.jpg",
       ]
     },
   ],
@@ -259,7 +259,7 @@ const DATA = {
        {
       id: "week11",
       title: "Week 11",
-      date: "Apr 4 - May 9, 2026",
+      date: "May 4 - May 9, 2026",
       desc: "During the week, we organized Transcript of Records (TOR) files into three categories: TOR, Drafts, and Permanent Records, and arranged them alphabetically for proper storage and easier retrieval. We also scanned TOR files to support faster access to records when requested and transferred TOR data into the office computer system for digital documentation. In preparation for the upcoming commencement exercises, we were tasked to conduct a site survey and take photographs of the grandstand and the fences near Gate 1 for the layout and placement of event tarpaulins.",
       img: "/images/week-11/week11.png",
       wfh: "Under a work-from-home (WFH) setup, I assisted a staff member in completing the remaining BUSAS tasks assigned on April 24, particularly in processing and finalizing pending student record entries within the system.",
@@ -281,18 +281,30 @@ const DATA = {
          "/images/week-11/week11.4.jpg",
       ]
     },
-    {
+       {
       id: "week12",
       title: "Week 12",
-      img: "/images/nothing.png",
+      date: "May 11 - May 13, 2026",
+      desc: "During the final week of our OJT, we assisted in retrieving requested student files from the records room for processing at the office window. I was assigned to locate and organize specific student records requested by clients. We also assisted during a meeting at the PRMO by helping prepare and distribute snacks for the participants. In addition, we finalized our presentation together with the staff and participated in the closing activities, including the awarding and giving of certificates.",
+      img: "/images/week-12/week12.jpg",
+      wfh: "",
+
+      dtr: {
+       mon: { type: "office", am: "7:50-12:30", pm: "12:44-5:07" },
+       tue: { type: "office", am: "8:06-12:23", pm: "12:27-5:04" },
+       wed: { type: "office", am: "7:56-12:00", pm: "12:30-5:00" },
+       thu: { type: ""},
+       fri: { type: ""},
+       sat: { type: ""},
+          },
 
       images: [
-        "/images/nothing.png",
-        "/images/week-11/",
-        "/images/week-11/",
-        "/images/week-11/",
-        "/images/week-11/",
+        "/images/week-12/week12.jpg",
+        "/images/week-12/week12.1.png",
+        "/images/week-12/week12.2.jpg",
+        "/images/week-12/week12.3.jpg",
+         "/images/week-12/week12.4.jpg",
       ]
-    }
+    },
   ]
 };
