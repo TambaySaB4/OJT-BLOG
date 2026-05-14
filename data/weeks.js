@@ -131,12 +131,12 @@ const DATA = {
       date: "Mar 30 - Apr 1, 2026",
       desc: "Facilitated the retrieval and transmittal of official student records from various university departments, including coordination with the Bicol University Graduate School (BUGS) Registrar’s Office. This involved securing physical file copies for designated student batches and managing pullout folders for additional records. All documents were properly logged, forwarded to the appropriate registrar, and officially received with the necessary signatures to maintain a secure and verifiable chain of custody. In addition, I updated, refined, and polished the UI design of the directory page and pushed the latest changes to GitHub.",
       img: "/images/week-6/week6.jpg",
-      wfh: "NONE",
+      wfh: "Under a work-from-home (WFH) setup, I worked on assigned tasks in the Bicol University Student Archiving System (BUSAS). The tasks included inputting and verifying Transcript of Records (TOR) data, adding academic curricula for assigned student records, identifying and correcting data inconsistencies, and assisting staff in processing records to ensure accurate and complete student information within the system.",
 
        dtr: {
        mon: { type: "office", am: "7:37-12:24", pm: "12:27-5:06" },
        tue: { type: "office", am: "7:48-12:34", pm: "12:39-5:06" },
-       wed: { type: ""},
+       wed: { type: "wfh"},
        thu: { type: ""},
        fri: { type: ""},
        sat: { type: ""},
