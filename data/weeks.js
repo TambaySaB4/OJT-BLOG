@@ -275,7 +275,7 @@ const DATA = {
 
       images: [
         "/images/week-11/week11.png",
-        "/images/week-11/week11.1.png",
+        "/images/week-11/week11.1.jpg",
         "/images/week-11/week11.2.jpg",
         "/images/week-11/week11.3.jpg",
          "/images/week-11/week11.4.jpg",
