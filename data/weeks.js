@@ -286,7 +286,7 @@ const DATA = {
       title: "Week 12",
       date: "May 11 - May 13, 2026",
       desc: "During the final week of our OJT, we assisted in retrieving requested student files from the records room for processing at the office window. I was assigned to locate and organize specific student records requested by clients. We also assisted during a meeting at the PRMO by helping prepare and distribute snacks for the participants. In addition, we finalized our presentation together with the staff and participated in the closing activities, including the awarding and giving of certificates.",
-      img: "/images/week-12/week12.jpg",
+      img: "/images/week-12/week12.3.jpg",
       wfh: "",
 
       dtr: {
@@ -299,10 +299,10 @@ const DATA = {
           },
 
       images: [
-        "/images/week-12/week12.jpg",
+        "/images/week-12/week12.3.jpg",
         "/images/week-12/week12.1.png",
         "/images/week-12/week12.2.jpg",
-        "/images/week-12/week12.3.jpg",
+        "/images/week-12/week12.jpg",
          "/images/week-12/week12.4.jpg",
       ]
     },
